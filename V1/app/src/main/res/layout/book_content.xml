@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_book_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppBarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="#383838"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/returnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+            <TextView
+                android:text="将夜"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/titleText"
+                android:layout_weight="5.41"
+                android:gravity="center" />
+
+            <Button
+                android:text="+书签"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/labelButton" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.administrator.v1.book_content">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.Light.ProgressBar.Large"
+            android:layout_width="match_parent"
+            android:id="@+id/ContProgressBar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="179dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <view
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.example.administrator.v1.contView"
+            android:id="@+id/contView" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:horizontalSpacing="1.0dip"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1.0dip"
+            android:id="@+id/FuncGridView"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_height="80dp" />
+
+        <include
+            layout="@layout/func_index"
+            android:id="@+id/func_index_list"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/func_option"
+            android:id="@+id/func_option"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/func_option_animation"
+            android:id="@+id/func_option_animation"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

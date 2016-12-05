@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#383838"
+    android:weightSum="1"
+    android:divider="@drawable/shape"
+    android:showDividers="beginning|middle|end">
+
+    <TextView
+        android:text="翻页动画"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="平移"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Translation"
+            android:layout_weight="1"
+            android:textColor="#d0d0d0"
+            android:textSize="20dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="仿真"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Bezier"
+            android:layout_weight="1"
+            android:textColor="#d0d0d0"
+            android:textSize="20dp"/>
+    </RadioGroup>
+</LinearLayout>

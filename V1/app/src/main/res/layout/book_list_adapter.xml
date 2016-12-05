@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_height="111dp"
+            android:id="@+id/book_img"
+            android:layout_width="75dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20.65">
+
+            <TextView
+                android:text="书名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_title"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="作者"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_author"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="分类"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_category"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="已读"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_latest"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:text="最新章节"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_latestChapter"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
